@@ -23,11 +23,10 @@ ExtFolder = ['Doc']
 Syntax = ['Vertex', 'Fragment', 'Geometry', 'Compute', 'Logo']
 Raw_Data = []
 
-#os.chdir(r'C:\Users\surfa\Desktop\Minecraft\VisionLab\.minecraft\shaderpacks\Horizon\shaders')
-Path = r'C:\Users\surfa\Documents\Code\GLSL\Visionary\shaders'
-PathA = r'C:\Users\surfa\Documents\Code\Python\OpenGL'
+# os.chdir(r'C:\Users\surfa\Desktop\Minecraft\VisionLab\.minecraft\shaderpacks\Horizon\shaders')
+PRN = os.getcwd()
 
-os.chdir(PathA)
+Path = os.getcwd() + r'\Starry\shaders'
 
 for Data in Syntax:
     Raw = open(Data, 'r+')
@@ -44,7 +43,7 @@ else:
     os.makedirs(Path)
     print('光影目录创建成功')
 
-os.chdir(r'C:\Users\surfa\Documents\Code\GLSL\Visionary\shaders')
+os.chdir(os.getcwd() + r'\Starry\shaders')
 
 for i in Folder:
     if os.path.exists(i):
@@ -75,13 +74,13 @@ for i in range(len(ExtName)):
             Works.writelines(Version + Logo + Program_Data[i])
             Works.close()
 
-os.chdir(r'C:\Users\surfa\Documents\Code\GLSL\Visionary\shaders\lang')
+os.chdir(PRN + r'\Starry\shaders\Lang')
 
 for i in i18n:
     Works = open(i + '.lang', 'w+')
     Works.write('#本文件根据联合国工作用语言确定')
     Works.close()
 
-os.chdir(r'C:\Users\surfa\Documents\Code\GLSL\Visionary\shaders\lib')
+os.chdir(PRN + r'\Starry\shaders\Lib')
 Works = open('Universal.glsl', 'w+')
 Works.close()
