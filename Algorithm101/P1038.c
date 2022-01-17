@@ -5,7 +5,7 @@ int f(int input)
     return input / 10 + input % 10;
 }
 
-void main()
+int main()
 {
     int NumberA = 27;
     int NumberB = 33;
@@ -14,4 +14,5 @@ void main()
     {
         Sum = Sum + f(i);
     }
+    return 0;
 }
