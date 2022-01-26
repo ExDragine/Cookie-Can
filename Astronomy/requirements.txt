@@ -1,0 +1,19 @@
+matplotlib
+astropy
+numpy
+opencv-python
+pandas
+# #Astro Basic
+# astropy
+# astropy-healpix
+# astroquery
+# ccdproc
+# photutils
+# #regions
+# reproject
+# specutils
+# #Astro Ext
+# APLpy
+# astroML
+# astroalign
+# poliastro
