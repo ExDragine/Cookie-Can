@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "src/json-20210307.jar"
+    ],
+    "python.formatting.provider": "yapf",
+}

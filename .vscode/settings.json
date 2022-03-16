@@ -1,6 +1,7 @@
 {
     "python.formatting.provider": "yapf",
     "files.associations": {
-        "CONTEXT.C": "cpp"
+        "CONTEXT.C": "cpp",
+        "TEST.C": "cpp"
     }
 }
