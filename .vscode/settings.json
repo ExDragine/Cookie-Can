@@ -3,5 +3,10 @@
     "files.associations": {
         "CONTEXT.C": "cpp",
         "TEST.C": "cpp"
-    }
+    },
+    "python.testing.pytestArgs": [
+        "Python"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
