@@ -10,7 +10,7 @@
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "-g", // 生成和调试有关的信息
                 "-Wall", // 开启额外警告
-                "-std=c11" // C++最新标准为c++17，或根据自己的需要进行修改
+                "-std=c2x" // C++最新标准为c++17，或根据自己的需要进行修改
             ], // 编译命令参数
             "type": "process", // process是vsc把预定义变量和转义解析后直接全部传给command；shell相当于先打开shell再输入命令，所以args还会经过shell再解析一遍
             "group": "build",
@@ -25,7 +25,7 @@
         {
             "type": "shell",
             "label": "C/C++: gcc.exe build active file",
-            "command": "C:\\Framework\\MingW64\\bin\\gcc.exe",
+            "command": "D:\\Framework\\MSYS2\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "${file}",
@@ -34,7 +34,7 @@
                 "-O2"
             ],
             "options": {
-                "cwd": "C:\\Framework\\MingW64\\bin\\bin"
+                "cwd": "D:\\Framework\\MSYS2\\mingw64\\bin\\bin"
             },
             "problemMatcher": [
                 "$gcc"

@@ -2,13 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "Launch Hello",
-            "request": "launch",
-            "mainClass": "Hello",
-            "projectName": "Code_969a6ff5"
-        },
-        {
             "name": "Python: 当前文件",
             "type": "python",
             "request": "launch",
@@ -26,7 +19,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\Framework\\MingW64\\bin\\gdb.exe",
+            "miDebuggerPath": "D:\\Framework\\MSYS2\\mingw64\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
