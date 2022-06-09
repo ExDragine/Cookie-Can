@@ -131,11 +131,9 @@ dmypy.json
 # VSCode
 #.vscode/
 
-Python/Analyze-Rock-Images-AI-NASA/Data/
-Python/Over-The-Moon/meteor-showers/data/
-Python/Over-The-Moon/sample-return/data/
-Python/EmotionInsight/datasets
-Python/EmotionInsight/database
+Python/Microsoft Learn/Analyze-Rock-Images-AI-NASA/Data/*
+Python/Microsoft Learn/Over-The-Moon/meteor-showers/data/
+Python/Microsoft Learn/Over-The-Moon/sample-return/data/
 
 # AI model
 .pth

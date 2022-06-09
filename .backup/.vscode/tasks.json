@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile", // 任务名称，与launch.json的preLaunchTask相对应
+            "command": "gcc", // 要使用的编译器，C++用clang++；如果编译失败，改成gcc或g++试试，还有问题那就是你自己的代码有错误
+            "args": [
+                "${file}",
+                "-o", // 指定输出文件名，不加该参数则默认输出a.exe，Linux下默认a.out
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-g", // 生成和调试有关的信息
+                "-Wall", // 开启额外警告
+                "-std=c2x" // C++最新标准为c++17，或根据自己的需要进行修改
+            ], // 编译命令参数
+            "type": "process", // process是vsc把预定义变量和转义解析后直接全部传给command；shell相当于先打开shell再输入命令，所以args还会经过shell再解析一遍
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always", // 在“终端”中显示编译信息的策略，可以为always，silent，never。具体参见VSC的文档
+                "focus": false, // 设为true后可以使执行task时焦点聚集在终端，但对编译c和c++来说，设为true没有意义
+                "panel": "shared" // 不同的文件的编译信息共享一个终端面板
+            },
+            "problemMatcher": "$gcc" // 如果你不使用clang，去掉前面的注释符，并在上一条之后加个逗号。照着我的教程做的不需要改（也可以把这行删去)
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: gcc.exe build active file",
+            "command": "D:\\Framework\\MSYS2\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-O2"
+            ],
+            "options": {
+                "cwd": "D:\\Framework\\MSYS2\\mingw64\\bin\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
